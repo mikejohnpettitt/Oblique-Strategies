@@ -67,23 +67,7 @@ function populatePawns() {
 		}
 }
 
-/*triggers onclick on enter*/
 
-function addEnter() {
-// Get the input field
-var input = document.getElementById("player-name");
-
-// Execute a function when the user presses a key on the keyboard
-input.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("add-player").click();
-  }
-});
-	}
   
 function unopenIt(a) {
 	a.classList.remove("open");
@@ -211,10 +195,7 @@ function prepareDeck() {
 
         } else {
             unflip();
-            /*depopulate()*/
             progress();
-			wipeBoard();
-            /*stopTimer();*/
             hide(document.getElementById("question-a-container"));
 
         }
@@ -222,7 +203,7 @@ function prepareDeck() {
 
     function flipOff() {
         if (isflipped == 0) {
-			/*do nothing*/
+
         } else {
             unflip();
             /*depopulate()*/
