@@ -124,16 +124,122 @@ header a {
   float: left;
 }
 
+.player-name {
+	padding: 20px;
+}
 
+.active {
+	opacity: 1;
+	transition: transform ease 0.5s; 
+}
+
+.inactive {
+	opacity: 0.4;
+	transition: transform ease 0.5s; 
+}
+
+#timer-container {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background: #323232;
+	color: white;
+	border-bottom-left-radius: 20px;
+	padding: 10px;
+	width: 400px;
+	height: 80px;
+}
+
+#timer {
+	/*font-size: 2em;*/
+	font-weight: bold;
+	/*margin: 20px;*/
+}
+
+.guide-button {
+	padding: 40px 20px;
+	cursor: pointer;
+}
+
+#guide-container {
+	position: absolute;
+	width: 500px;
+	height: 100%;
+	background-color: #323232;
+	transition:left 0.5s ease;
+	z-index: 0;
+	top: 0;
+	cursor: pointer;
+	color: white;
+	padding: 40px;
+}
+
+#guide-container.unopen {
+	left: -600px;
+	
+}
+
+#guide-container.open {
+	left: 0px;
+	
+}
 
 .ilb {
 	width: 150px;
 	display: inline-block;
 }
 
+#question-number {
+	text-transform: uppercase;
+	/*font-size: 1.5em;*/
+	margin: auto;
+}
 
+.guide-icon {
+	width: 40px;
+	margin: 10px;
+}
+
+.icon-guide {
+	text-align: left;
+}
+
+.x-button {
+position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: 900;
+}
+
+.guide-icon-text {
+	margin: auto;
+	padding: 1em; 
+	height: auto;
+}
+
+#whiteout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #EFEFEF;
+	transition: opacity 0.5s;
+	overflow: auto;
+}
+
+#whiteout.unopen {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#whiteout.open {
+	opacity: 0.8;
+}
 
 /* FROM OTHER DOC*/
+
+
 
 .flip-card {
   background-color: transparent;
