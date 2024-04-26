@@ -805,3 +805,9 @@ position: absolute;
 		background-color: #7C7C7C;
 	color: #efefef;
 }
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
